@@ -16,14 +16,21 @@ Roc is a toolkit for real-time audio streaming over the network.
 2. Compiling
 
 3. How to run:
-- a. [[How to run `roc-recv` & `roc-send`(roc-streaming.org)]](https://roc-streaming.org/toolkit/docs/tools/command_line_tools.html)
+- [[How to run `roc-recv` & `roc-send`(roc-streaming.org)]](https://roc-streaming.org/toolkit/docs/tools/command_line_tools.html)
 
 Existing Roc Toolkit documentation, while comprehensive, is not really beginner friendly. So we aim to bridge this gap.
 
   - Step 1: Start `roc-recv` at the receiving node (computer) with the following command:
     - `.../roc-toolkit-0.4.0/bin/x86_64-pc-linux-gnu$ roc-recv -vv -s rtp+rs8m://0.0.0.0:10001 -r rs8m://0.0.0.0:10002 -c rtcp://0.0.0.0:10003`
+  - Step 2: On the audio sending node (computer), run:
+    - `pactl list | grep monitor`
 
 <img src="docs/images/roc-send.png">
+
+  - From the results, copy the string after `Name:`
+    - `alsa_output.pci-0000_00_1b.0.analog-stereo.monitor`
+  - Run the following command, where `192.168.1.8` is the ip address of the audio receiving node:
+    - `/roc-toolkit-0.4.0/bin/x86_64-pc-linux-gnu$ ./roc-send -vv  -s rtp +rs8m://192.168.1.8:10001 -r rs8m://192.168.1.8:10002 -c rtcp://192.168.1.8:10003 -i pulse://alsa_output.pci-0000_00_1b.0.analog-stereo.monitor`
 
 ---
 
