@@ -10,6 +10,8 @@ Roc is a toolkit for real-time audio streaming over the network.
 
 ---
 
+Existing Roc Toolkit documentation, while comprehensive, is not really beginner friendly. So we aim to bridge this gap.
+
 1. Background:
   - https://gavv.net/articles/roc-0.4/
   - https://www.reddit.com/r/linuxaudio/comments/179exh8/realtime_audio_over_lan/
@@ -19,8 +21,6 @@ Roc is a toolkit for real-time audio streaming over the network.
 
 3. How to run:
 - [[How to run `roc-recv` & `roc-send`(roc-streaming.org)]](https://roc-streaming.org/toolkit/docs/tools/command_line_tools.html)
-
-Existing Roc Toolkit documentation, while comprehensive, is not really beginner friendly. So we aim to bridge this gap.
 
   - Step 1: Start `roc-recv` at the receiving node (computer) with the following command:
     - `.../roc-toolkit-0.4.0/bin/x86_64-pc-linux-gnu$ roc-recv -vv -s rtp+rs8m://0.0.0.0:10001 -r rs8m://0.0.0.0:10002 -c rtcp://0.0.0.0:10003`
