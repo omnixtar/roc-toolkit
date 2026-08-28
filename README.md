@@ -16,7 +16,7 @@ Existing Roc Toolkit documentation, while comprehensive, is not really beginner 
   - https://gavv.net/articles/roc-0.4/
   - https://www.reddit.com/r/linuxaudio/comments/179exh8/realtime_audio_over_lan/
 2. Compiling:
-  - Run `grep 'Checking\|Searching' config.log` to get [[dependencies.log]](doc/dependencies.log).
+  - Run `grep 'Checking\|Searching' config.log` to get [[dependencies.log]](docs/dependencies.log).
   - Install and run `scons` to compile binaries.
 
 3. How to run:
