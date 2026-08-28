@@ -10,6 +10,8 @@ Roc is a toolkit for real-time audio streaming over the network.
 
 ---
 
+1. https://gavv.net/articles/roc-0.4/
+  - https://www.reddit.com/r/linuxaudio/comments/179exh8/realtime_audio_over_lan/
 1. Compiling
 2. [[Running]](https://roc-streaming.org/toolkit/docs/tools/command_line_tools.html)
 
