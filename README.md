@@ -16,6 +16,8 @@ Roc is a toolkit for real-time audio streaming over the network.
 2. Compiling
 3. [[Running]](https://roc-streaming.org/toolkit/docs/tools/command_line_tools.html)
 
+<img src="docs/images/roc-send.png">
+
 ---
 
 You can read about the project here:
