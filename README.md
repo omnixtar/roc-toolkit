@@ -34,6 +34,9 @@ Existing Roc Toolkit documentation, while comprehensive, is not really beginner 
   - Run the following command, where `192.168.1.8` is the ip address of the audio receiving node:
     - `/roc-toolkit-0.4.0/bin/x86_64-pc-linux-gnu$ ./roc-send -vv  -s rtp +rs8m://192.168.1.8:10001 -r rs8m://192.168.1.8:10002 -c rtcp://192.168.1.8:10003 -i pulse://alsa_output.pci-0000_00_1b.0.analog-stereo.monitor`
     - This will redirect the audio from `-i` to `roc-send`, e.g. audio from web browsers.
+    - You may run `pavucontrol` or `pavucontrol-qt` on both audio sending and receiving nodes for volume control.
+
+<img src="docs/images/pavucontrol-qt.png">
 
 ---
 
