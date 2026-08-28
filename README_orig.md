@@ -6,8 +6,6 @@
 
 Roc is a toolkit for real-time audio streaming over the network.
 
----
-
 You can read about the project here:
 
 * [Overview](https://roc-streaming.org/toolkit/docs/about_project/overview.html)
